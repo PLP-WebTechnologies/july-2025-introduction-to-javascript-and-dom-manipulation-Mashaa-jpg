@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals</title>
+    <!-- Use Tailwind CSS for rapid styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to our external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="p-8 md:p-12 lg:p-16">
+
+    <div class="container mx-auto max-w-4xl p-8 bg-gray-800 rounded-2xl shadow-lg border-2 border-gray-700">
+        <h1 class="text-4xl font-bold text-center mb-6 text-indigo-400">JavaScript Fundamentals</h1>
+        <p class="text-center text-gray-400 mb-10">
+            A single-file project demonstrating core JavaScript concepts: variables, functions, loops, and DOM manipulation.
+        </p>
+
+        <!-- Section 1 & 2: Basics & Functions -->
+        <div class="mb-12 border-b border-gray-700 pb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-300">User Interaction & Logic</h2>
+            <div class="flex flex-col sm:flex-row gap-4 mb-4">
+                <input type="text" id="nameInput" placeholder="Enter your name..."
+                       class="flex-grow p-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
+                <button id="greetBtn"
+                        class="px-6 py-3 bg-blue-600 hover:bg-blue-700 transition duration-300 rounded-lg font-semibold shadow-lg">
+                    Greet Me!
+                </button>
+            </div>
+            <p id="greetingOutput" class="text-green-400 font-medium text-center sm:text-left"></p>
+        </div>
+
+        <!-- Section 3: Loops -->
+        <div class="mb-12 border-b border-gray-700 pb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-purple-300">Dynamic Content with Loops</h2>
+            <button id="generateListBtn"
+                    class="px-6 py-3 bg-purple-600 hover:bg-purple-700 transition duration-300 rounded-lg font-semibold shadow-lg mb-4">
+                Generate Item List
+            </button>
+            <ul id="itemList" class="bg-gray-700 p-4 rounded-lg">
+                <!-- List items will be generated here by JavaScript -->
+            </ul>
+        </div>
+
+        <!-- Section 4: DOM Manipulation -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-pink-300">DOM Manipulation</h2>
+            <div class="flex flex-col sm:flex-row gap-4 items-center">
+                <p id="domText" class="text-lg text-gray-300 flex-grow text-center sm:text-left">
+                    Click the button to change this text.
+                </p>
+                <button id="changeTextBtn"
+                        class="px-6 py-3 bg-pink-600 hover:bg-pink-700 transition duration-300 rounded-lg font-semibold shadow-lg">
+                    Change Text
+                </button>
+                <button id="toggleClassBtn"
+                        class="px-6 py-3 bg-yellow-600 hover:bg-yellow-700 transition duration-300 rounded-lg font-semibold shadow-lg">
+                    Toggle Class
+                </button>
+            </div>
+            <p class="text-xs text-center sm:text-left text-gray-500 mt-2">
+                The "Toggle Class" button adds a CSS class to the text, changing its appearance.
+            </p>
+        </div>
+    </div>
+
+    <!-- Link to our external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
